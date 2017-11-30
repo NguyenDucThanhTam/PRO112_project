@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/br"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.rs.androidsocketio.MainActivity">
+
+    <!-- LV Members -->
+    <ListView
+        android:id="@+id/lv_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </ListView>
+    <!--Show Message-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Message"
+        android:textColor="@color/colorTextMessage"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/lv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+
+    </ListView>
+
+    <!-- EDT -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edt_contain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="10dp"
+            android:hint="Type in here ..."/>
+
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:src="@mipmap/ic_add"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:src="@mipmap/ic_send"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
